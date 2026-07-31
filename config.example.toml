@@ -3,7 +3,9 @@
 #
 # Env var equivalents: SOCIALDL_COOKIES_FROM_BROWSER, SOCIALDL_COOKIES, SOCIALDL_OUT.
 
-# Authentication. For headless / AI-agent use, a cookies.txt is most portable:
+# Authentication. For headless / AI-agent use, a cookies.txt is most portable.
+# ⚠️ Ban risk: requests run as whatever account these cookies belong to, and the
+# platforms can rate-limit or ban it. Use a throwaway account, NOT your main one.
 # cookies = "/home/you/cookies.txt"
 #
 # For interactive/local use, read cookies live from a browser instead

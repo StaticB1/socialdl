@@ -41,6 +41,20 @@ you're logged in — this is the portable choice for headless/agent use:
 For **interactive/local** use you can instead read cookies live from a browser
 with `--cookies-from-browser firefox` (not available on headless servers).
 
+> ⚠️ **Account-ban risk — use a throwaway account, not your main one.**
+> Your cookies make every request run as *your* account. Instagram, TikTok, and
+> Facebook actively detect automated access and may **rate-limit, temporarily
+> "action-block", or permanently ban** the account whose cookies you use — this
+> happens even at slow speeds, and people have had accounts flagged this way.
+> To stay safe:
+> - Use a **secondary "burner" account** you can afford to lose — never your
+>   personal/main account.
+> - Keep volume low: scope with `--limit`, `--since`, and `--top-liked` instead
+>   of pulling entire histories.
+> - If you hit `429 Too Many Requests` or an action-block, **stop and wait hours
+>   or days** — retrying aggressively lengthens the ban.
+> - A ban is a risk **you** accept by using cookies; this tool can't prevent it.
+
 ## The four interfaces
 
 ### 1. CLI (with `--json`)
@@ -242,12 +256,35 @@ it you agree that **you** are solely responsible for how you use it.
   and don't use this tool to harvest or target private individuals.
 - **Don't hammer the sites.** Use reasonable limits (`--limit`, `--since`) and
   don't run aggressive, high-volume scraping.
+- **Account-ban risk is on you.** Authenticating with your cookies can get that
+  account rate-limited or banned (see the warning in *Authentication*). Use a
+  disposable account; the maintainers are not liable for banned accounts.
 - **No affiliation.** This project is not affiliated with, endorsed by, or
   sponsored by Instagram, TikTok, Facebook/Meta, or ByteDance. All trademarks
   belong to their respective owners.
 
 The software is provided "as is", without warranty of any kind (see
 [LICENSE](LICENSE)).
+
+## Related projects
+
+socialdl is far from the only tool in this space — it deliberately stands on the
+shoulders of mature downloaders rather than reinventing them:
+
+- **[gallery-dl](https://github.com/mikf/gallery-dl)** — the multi-site engine
+  socialdl drives under the hood.
+- **[yt-dlp](https://github.com/yt-dlp/yt-dlp)** — video downloader (used by
+  gallery-dl for some video content).
+- **[Instaloader](https://github.com/instaloader/instaloader)** —
+  Instagram-specialised downloader (profiles, stories, hashtags).
+- **[cobalt](https://github.com/imputnet/cobalt)** — privacy-first, no-account
+  media downloader across many platforms.
+
+**What socialdl adds:** a single, small, agent-friendly layer over gallery-dl
+that exposes the *same* structured operation through a **CLI, an MCP server, and
+an HTTP API** — plus conveniences like like-ranking (`--top-liked`), sidecar
+backfill, and JSON output. If you just want a one-off download, the tools above
+may serve you directly.
 
 ## Contributing
 

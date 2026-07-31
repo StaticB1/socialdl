@@ -1,0 +1,21 @@
+# Example socialdl config. Copy to ~/.config/socialdl/config.toml and edit.
+# Precedence:  CLI flag  >  env var  >  this file  >  built-in default.
+#
+# Env var equivalents: SOCIALDL_COOKIES_FROM_BROWSER, SOCIALDL_COOKIES, SOCIALDL_OUT.
+
+# Authentication. For headless / AI-agent use, a cookies.txt is most portable:
+# cookies = "/home/you/cookies.txt"
+#
+# For interactive/local use, read cookies live from a browser instead
+# (one of: firefox, chrome, chromium, edge, brave, safari, opera, vivaldi):
+cookies_from_browser = "firefox"
+
+# Where downloads go (default: <repo>/downloads):
+# out = "/home/you/Pictures/socials"
+
+# Use an exported cookies.txt instead of a live browser:
+# cookies = "/home/you/cookies.txt"
+
+# Always save the caption (.txt) and/or full metadata (.json) sidecars:
+# captions = true
+# metadata = true

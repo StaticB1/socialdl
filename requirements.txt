@@ -1,0 +1,7 @@
+# Dependencies are declared in pyproject.toml; install with:  pip install -e .
+# This file mirrors them for tooling that expects a requirements.txt.
+gallery-dl>=1.32
+yt-dlp>=2025.1
+mcp>=1.2
+fastapi>=0.110
+uvicorn>=0.27

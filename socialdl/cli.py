@@ -33,6 +33,13 @@ def build_parser() -> argparse.ArgumentParser:
             "  socialdl https://www.instagram.com/natgeo/ --json\n"
             "  socialdl @nasa -p tiktok --probe --json\n"
             "  socialdl NASA -p facebook --since 2026-01-01 --cookies cookies.txt\n"
+            "\n"
+            "responsible use:\n"
+            "  Only download media you have a right to access, and respect each\n"
+            "  platform's Terms of Service and the rights of content owners.\n"
+            "  Cookies make requests run as YOUR account, which platforms may\n"
+            "  rate-limit or ban -- use a throwaway account. No warranty; see\n"
+            "  the Legal & responsible use section of the README.\n"
         ),
     )
     p.add_argument("target", help="a username/@handle, or a full profile/post URL")

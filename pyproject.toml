@@ -12,7 +12,7 @@ license = { text = "MIT" }
 authors = [{ name = "socialdl contributors" }]
 keywords = [
     "instagram", "tiktok", "facebook", "downloader", "gallery-dl",
-    "mcp", "agent", "media", "scraper",
+    "mcp", "agent", "media",
 ]
 classifiers = [
     "Development Status :: 4 - Beta",

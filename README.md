@@ -16,6 +16,11 @@ downloads/
 └── facebook/NASA/      ...
 ```
 
+> **Before you use this:** it downloads only what your own account can already
+> see, but you are responsible for respecting each platform's Terms of Service,
+> copyright, and privacy. Authenticating with your cookies can get that account
+> banned. See [Legal & responsible use](#legal--responsible-use).
+
 ## Setup
 
 ```bash

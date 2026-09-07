@@ -6,7 +6,7 @@ contributions that keep it simple and well-tested are very welcome.
 ## Development setup
 
 ```bash
-git clone https://github.com/OWNER/socialdl
+git clone https://github.com/StaticB1/socialdl
 cd socialdl
 python3 -m venv .venv
 .venv/bin/pip install -e ".[dev]"

@@ -5,3 +5,10 @@ __pycache__/
 *.egg-info/
 build/
 dist/
+.pytest_cache/
+
+# Never commit credentials or local config
+cookies.txt
+*.cookies.txt
+config.toml
+.env

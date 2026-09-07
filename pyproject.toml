@@ -37,9 +37,9 @@ dependencies = [
 dev = ["pytest>=8.0"]
 
 [project.urls]
-Homepage = "https://github.com/OWNER/socialdl"
-Repository = "https://github.com/OWNER/socialdl"
-Issues = "https://github.com/OWNER/socialdl/issues"
+Homepage = "https://github.com/StaticB1/socialdl"
+Repository = "https://github.com/StaticB1/socialdl"
+Issues = "https://github.com/StaticB1/socialdl/issues"
 
 [project.scripts]
 socialdl = "socialdl.cli:main"

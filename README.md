@@ -23,8 +23,7 @@ downloads/
 ```
 
 This installs three commands (from the venv): `socialdl`, `socialdl-mcp`,
-`socialdl-serve`. (Already set up in this checkout — you only need this on a fresh
-clone.)
+`socialdl-serve`.
 
 ## Authentication (read this first)
 
